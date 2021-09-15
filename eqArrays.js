@@ -10,7 +10,7 @@ const eqArrays = (list1, list2) => {
     return list1.every((value, index) => value === list2[index]);
 
   } else {
-    return 'abc';
+    return 'false';
   }
 };
 

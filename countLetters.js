@@ -9,16 +9,13 @@ assertEqual();
 const countLetters = (string) => {
   let total = {};
   for (let i = 0; i < string.length; i++) {
-    console.log(i, string[i]);
     if (string[i] === ' ') {
       continue;
     } else {
       if (total[string[i]] > 0) {
         total[string[i]] += 1;
-        console.log('1:', total);
       } else {
         total[string[i]] = 1;
-        console.log('others:', total);
       }
     }
   } return total;

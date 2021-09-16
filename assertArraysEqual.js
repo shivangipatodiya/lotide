@@ -3,14 +3,14 @@ const eqArrays = (list1, list2) => {
     return list1.every((value, index) => value === list2[index]);
 
   } else {
-    return 'false';
+    return false;
   }
 };
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
-    return `✅✅✅Assertion Passed: ${actual} === ${expected}`;
+    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
   } else {
-    return `🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`;
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertArraysEqual();
+assertArraysEqual([], []);

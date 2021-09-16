@@ -16,7 +16,7 @@ const eqArrays = (list1, list2) => {
 
 const flatten = (array) => {
   let output = [];
-  for (const element of array) {
+  array.forEach(element=>{
     if (Array.isArray(element)) {
       for (let value of element) {
         output.push(value);
@@ -24,7 +24,17 @@ const flatten = (array) => {
     } else {
       output.push(element);
     }
-  } return output;
+  })
+  // for (const element of array) {
+  //   if (Array.isArray(element)) {
+  //     for (let value of element) {
+  //       output.push(value);
+  //     }
+  //   } else {
+  //     output.push(element);
+  //   }
+  // } 
+  return output;
 };
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);

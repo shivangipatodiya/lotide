@@ -1,5 +1,7 @@
-const words = ["ground", "control", "to", "major", "tom"];
-//const results1 = map(words, word => word[0]);
+// const words = ["ground", "control", "to", "major", "tom"];
+// //const results1 = map(words, word => word[0]);
+const eqArrays = require('./eqArrays');
+const assertArraysEqual =require('./assertArraysEqual');
 
 const map = function(array, callback) {
   const results = [];
@@ -8,25 +10,9 @@ const map = function(array, callback) {
   }
   return results;
 };
-console.log(map(words, word => word[0]));
+//console.log(map(words, word => word[0]));
+// assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
+// assertArraysEqual(map(words, word => '[' + word + ']'), ["ground", "control", "to"]);
+// assertArraysEqual(map(words, word => word.length), []);
 
-const eqArrays = (list1, list2) => {
-  if (Array.isArray(list1) && Array.isArray(list2)) {
-    if (list1.length === list2.length) {
-      return list1.every((value, index) => value === list2[index]);
-    }
-  } else {
-    return false;
-  }
-};
-const assertArraysEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-assertArraysEqual(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]);
-assertArraysEqual(map(words, word => '[' + word + ']'), ["ground", "control", "to"]);
-assertArraysEqual(map(words, word => word.length), []);
+module.exports = map;

@@ -1,4 +1,4 @@
-const assertArraysEqual =require('./assertArraysEqual';)
+const assertArraysEqual = require('./assertArraysEqual');
 const eqArrays =require('./eqArrays');
 
 
@@ -8,8 +8,8 @@ const middle = (array) => {
   return output;
 } else if (array.length > 2) {
   if (array.length % 2 === 0) {
-    output.push(array[1]);
-    output.push(array[array.length / 2]);
+    output.push(array[(array.length / 2) - 1]);
+    output.push(array[array.length / 2])
     return output;
   } else { 
     output.push(array[Math.floor(array.length / 2)]);
@@ -17,7 +17,7 @@ const middle = (array) => {
   }
 }
 };
-//console.log(middle([1, 2]));
+//console.log(middle([0, 1, 2, 3, 4, 5]));
 
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@shivangipatodiya/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "fork of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/shivangipatodiya/lotide.git"
   },
-  "author": "",
+  "author": "Shivangi Patodiya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shivangipatodiya/lotide/issues"

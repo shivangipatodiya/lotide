@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @username/lotide`
+`npm install @shivangipatodiya/lotide`
 
 **Require it:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@shivangipatodiya/lotide');`
 
 **Call it:**
 
@@ -26,6 +26,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+* `head(Array)`: The head function takes in an array and returns the element at index 0(head).
+* `tail(Array)`: The tail function returns an array of all the elements of the array that is passed except element at index 0(head).
+* `middle(Array)`: The middle function returns the the middle-most element(s) of the given array.
+* `countOnly(Array, Object)`: The countOnly function returns an object containing counts of everything that the input object lists as true and also listed in input array.
+* `countLetters(String)`: The countLetters function returns an object with count of each of the letters in that string.
+* `letterPositions(String)`: The letterPositions function return an object of all the indices (zero-based positions) in the string where each character is found.
+* `findKeyByValue(Object, String)`: The findKeyByValue function returns the first key which contains the given value.
+* `findKey(Object, Function)`: The findKey function returns the key that passes the condition of callback function passed in.
